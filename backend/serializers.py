@@ -25,7 +25,7 @@ class StudentOnboardingSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = StudentOnboarding
-        fields = [
+        fields = (
             "id",
             "student_full_name",
             "student_age",
@@ -38,8 +38,8 @@ class StudentOnboardingSerializer(serializers.ModelSerializer):
             "has_prior_lsa_experience",
             "consent_to_data_processing",
             "created_at",
-        ]
-        read_only_fields = ["id", "created_at"]
+        )
+        read_only_fields = ("id", "created_at")
 
     def validate_student_full_name(self, value):
         cleaned = value.strip()

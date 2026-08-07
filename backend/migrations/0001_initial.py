@@ -7,9 +7,9 @@ class Migration(migrations.Migration):
 
     initial = True
 
-    dependencies = []
+    dependencies = ()
 
-    operations = [
+    operations = (
         migrations.CreateModel(
             name="StudentOnboarding",
             fields=[
@@ -39,4 +39,4 @@ class Migration(migrations.Migration):
             ],
             options={"ordering": ["-created_at"]},
         ),
-    ]
+    )
