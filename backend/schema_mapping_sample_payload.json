@@ -1,0 +1,12 @@
+{
+  "student_full_name": "Ayesha Khan",
+  "student_age": 9,
+  "guardian_full_name": "Farhan Khan",
+  "guardian_email": "farhan.khan@example.com",
+  "guardian_phone": "+91 98765 43210",
+  "has_diagnosed_learning_difficulty": "Y",
+  "diagnosis_type": "Dyslexia",
+  "requires_one_on_one_support": "Y",
+  "has_prior_lsa_experience": "N",
+  "consent_to_data_processing": "Y"
+}
