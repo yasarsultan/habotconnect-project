@@ -1,3 +1,5 @@
+from typing import ClassVar
+
 from rest_framework import serializers
 
 from .dcyn import ALLOWED_DCYN_VALUES, from_dcyn, to_dcyn
@@ -25,7 +27,7 @@ class StudentOnboardingSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = StudentOnboarding
-        fields = [
+        fields: ClassVar[list[str]] = [
             "id",
             "student_full_name",
             "student_age",
@@ -39,7 +41,7 @@ class StudentOnboardingSerializer(serializers.ModelSerializer):
             "consent_to_data_processing",
             "created_at",
         ]
-        read_only_fields = ["id", "created_at"]
+        read_only_fields: ClassVar[list[str]] = ["id", "created_at"]
 
     def validate_student_full_name(self, value):
         cleaned = value.strip()
