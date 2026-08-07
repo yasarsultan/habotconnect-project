@@ -159,3 +159,9 @@ curl -X POST http://127.0.0.1:8000/api/student-onboarding/ \
 ```
 
 ---
+
+## Screenshots
+
+Push protection block example:
+
+![Push protection block example](https://github.com/yasarsultan/habotconnect-project/blob/main/imgs/Screenshot%20from%202026-08-07%2012-48-09.png)
